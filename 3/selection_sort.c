@@ -6,11 +6,11 @@ void sort(int *a, int size) {
   }
 
   /*
-   * Replace a[i] with smallest value in i..size.
+   * Replace a[i] with smallest value in i+1...size.
    * */
   for (int i = 0; i < size; i++) {
     int tmp, sm = i;
-    for (int j = i; j < size; j++) {
+    for (int j = i+1; j < size; j++) {
       if (a[j] < a[sm]) {
         sm = j;
       }
